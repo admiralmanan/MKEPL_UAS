@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - dev
+      - main
   pull_request:
     branches:
       - main
@@ -71,4 +72,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn verify sonar:sonar \
+            -Dsonar.projectKey=admiralmanan_MKEPL_UAS \
+            -Dsonar.organization=admiralmanan \
             -Dsonar.token=${SONAR_TOKEN}
