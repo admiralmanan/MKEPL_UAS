@@ -74,5 +74,5 @@ jobs:
           mvn verify sonar:sonar \
             -Dsonar.projectKey=admiralmanan_MKEPL_UAS \
             -Dsonar.organization=admiralmanan \
-            -Dsonar.token=${SONAR_TOKEN}
+            -Dsonar.token=${SONAR_TOKEN} \
             -Dsonar.qualitygate.wait=true
