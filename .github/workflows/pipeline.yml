@@ -75,3 +75,4 @@ jobs:
             -Dsonar.projectKey=admiralmanan_MKEPL_UAS \
             -Dsonar.organization=admiralmanan \
             -Dsonar.token=${SONAR_TOKEN}
+            -Dsonar.qualitygate.wait=true
