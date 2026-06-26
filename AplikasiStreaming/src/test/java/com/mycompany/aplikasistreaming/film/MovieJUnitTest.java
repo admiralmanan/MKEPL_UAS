@@ -19,6 +19,6 @@ public class MovieJUnitTest {
                 true
         );
 
-        assertEquals("", movie.getTitle()); //Continues testing gagal
+        assertEquals("Avengers", movie.getTitle()); //Continues testing gagal
     }
 }
