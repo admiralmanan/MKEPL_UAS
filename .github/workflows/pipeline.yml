@@ -75,11 +75,12 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          mvn verify sonar:sonar \
+          mvn clean verify sonar:sonar \
             -Dsonar.projectKey=admiralmanan_MKEPL_UAS \
             -Dsonar.organization=admiralmanan \
             -Dsonar.token=${SONAR_TOKEN} \
-            
+            -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml \
+            -Dsonar.junit.reportPaths=target/surefire-reports
   
   deploy:
     name: Continuous Delivery
