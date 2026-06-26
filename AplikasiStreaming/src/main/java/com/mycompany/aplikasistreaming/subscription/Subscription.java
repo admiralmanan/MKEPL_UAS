@@ -35,6 +35,10 @@ public abstract class Subscription {
         System.out.println("Langganan dibatalkan.");
     }
 
+    public String getPlanType() {
+        return planType;
+    }
+
     public abstract void price();
 }
 

@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 import java.util.ArrayList;
 
-class User implements InterfaceUser {
+public class User implements InterfaceUser {
     private String username;
     private String password;
     private String email;
